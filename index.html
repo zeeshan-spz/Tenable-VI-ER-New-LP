@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Understand your risk and know which vulnerabilities to fix first with Tenable.io">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tenable Vulnerability Intelligence</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- crazy egg added -->
+    <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0063/4307.js" async="async" ></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.tenable.com/themes/custom/tenable/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.tenable.com/themes/custom/tenable/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.tenable.com/themes/custom/tenable/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="https://www.tenable.com/themes/custom/tenable/img/favicons/manifest.json">
+    <link rel="mask-icon" href="https://www.tenable.com/themes/custom/tenable/img/favicons/safari-pinned-tab.svg" color="#00a5b5">
+    <link rel="shortcut icon" href="https://www.tenable.com/themes/custom/tenable/img/favicons/favicon.ico">
+
+    <!-- Load Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Footer CSS -->
+    <link rel="stylesheet" href="../main/footer/footer.css" />
+    <!-- Custome Styles -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Google Tag Manager -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag("consent", "default", {
+            ad_storage: "granted",
+            analytics_storage: "granted",
+            wait_for_update: 5000,
+        });
+
+        gtag("consent", "default", {
+            ad_storage: "denied",
+            analytics_storage: "denied",
+            wait_for_update: 5000,
+            region: ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LA', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'GB', 'IS', 'LI', 'NO', 'CH', 'CA'],
+        });
+
+        gtag("set", "ads_data_redaction", true);
+
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NBM4TM');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Script for Mutiny -->
+    <script>
+        (function () {
+        var a = (window.mutiny = window.mutiny || {});
+        if (!window.mutiny.client) {
+            a.client = { _queue: {} };
+            var b = ["identify", "trackConversion"];
+            var c = [].concat(b, ["defaultOptOut", "optOut", "optIn"]);
+            var d = function factory(c) {
+            return function () {
+                for (var d = arguments.length, e = new Array(d), f = 0; f < d; f++) {
+                e[f] = arguments[f];
+                }
+                a.client._queue[c] = a.client._queue[c] || [];
+                if (b.includes(c)) {
+                return new Promise(function (b, d) {
+                    a.client._queue[c].push({ args: e, resolve: b, reject: d });
+                    setTimeout(d, 500);
+                });
+                } else {
+                a.client._queue[c].push({ args: e });
+                }
+            };
+            };
+            c.forEach(function (b) {
+            a.client[b] = d(b);
+            });
+        }
+        })();
+    </script>
+    <script data-cfasync="false" src="https://client-registry.mutinycdn.com/personalize/client/3feac35d107ad216.js"></script>
+    <!-- End Script for Mutiny -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBM4TM" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Start Main -->
+    <main id="tenable-io-page" class="loading">
+        <!-- hero sec -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-logo">
+                    <a href="##">
+                        <picture>
+                            <source media="(min-width:768px)" srcset="images/logo-VM.svg">
+                            <img src="images/logo-VM-mbl.svg" alt="Tenable Vulnerability Management">
+                        </picture>
+                    </a>
+                </div>
+                <div class="hero-section-inner mfp-wrap">
+                    <div class="hero-section-txt">
+                        <h1 class="hero-section-heading">Know where you are exposed and <span>close your critical risk</span></h1>
+                        <p class="hero-section-desc">Introducing Vulnerability Intelligence and Exposure Response, Tenable’s end-to-end solution to manage vulnerability exposures.</p>
+                        <p class="hero-section-desc">These innovative capabilities work in tandem to help you contextualize vulnerabilities, prioritize the actions that matter, and communicate progress to the business. They enable organizations to make informed, data-driven decisions swiftly, remediate assets and align security efforts with business objectives.</p>
+                        <div class="hero-section-cta">
+                            <a href="javascript:void(0)" class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22" fill="none"><path d="M16.875 11.9999C16.8755 12.1909 16.8265 12.3787 16.7329 12.5452C16.6392 12.7116 16.5041 12.851 16.3406 12.9498L6.21 19.1471C6.0392 19.2517 5.84358 19.3088 5.64334 19.3125C5.44309 19.3162 5.24549 19.2664 5.07094 19.1682C4.89805 19.0716 4.75402 18.9306 4.65368 18.7598C4.55333 18.589 4.50029 18.3946 4.5 18.1965V5.80322C4.50029 5.60514 4.55333 5.41071 4.65368 5.23993C4.75402 5.06914 4.89805 4.92817 5.07094 4.8315C5.24549 4.73331 5.44309 4.6835 5.64334 4.6872C5.84358 4.69091 6.0392 4.74801 6.21 4.8526L16.3406 11.0499C16.5041 11.1487 16.6392 11.2881 16.7329 11.4546C16.8265 11.621 16.8755 11.8089 16.875 11.9999Z" fill="#FFA400"/></svg>
+                                Watch the video
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-form-wrap">
+                        <h3 class="hero-form-heading">Get Started With Tenable</h1>
+                        <p class="hero-form-para">Enjoy full access to a modern, cloud-based vulnerability management platform that enables you to see and track all of your assets with unmatched accuracy. Sign up now.</p>
+                        <form id="mktoForm_7469" data-followup="https://www.tenable.com/products/tenable-one/evaluate/thank-you"></form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero sec end -->
+        <!-- about sec start -->
+        <section class="about-section">
+            <div class="container">
+                <h3>Manage vulnerability exposures with the&nbsp;<br>world’s #1 vulnerability management solution</h3>
+                <div class="about-section-inner">
+                    <div class="about-section-video">
+                        <!--<img class="video-thumb" src="images/video-thumbnail.jpg" alt="Vulnerability Intelligence">-->
+                        <div id="video-t-one" class="video-container">
+                            <img style="width: 100%; margin: auto; display: block;" class="vidyard-player-embed"
+                                src="https://play.vidyard.com/TcbrTHCE4jTvcU28u2x8fJ.jpg" data-uuid="TcbrTHCE4jTvcU28u2x8fJ"
+                                data-v="4" data-type="inline" />
+                        </div>
+                    </div>
+                    <div class="about-section-txt">
+                        <img class="sm-logo" src="images/logo-VM-sm.svg" alt="Tenable Vulnerability Management">
+                        <p class="about-section-desc">Surface key exposures, focus on the right actions, and communicate progress with Vulnerability Intelligence and Exposure Response.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about sec en -->
+        <!-- feature sec start -->
+        <section class="feature-section">
+            <div class="container">
+                <div class="feature-section-inner">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <picture>
+                                <source media="(min-width:1024px)" srcset="images/feature-1.svg">
+                                <img src="images/feature-1-tab.svg" alt="Surface key exposures">
+                            </picture>
+                        </div>
+                        <h4>Surface key exposures</h4>
+                        <p>Proactively find vulnerabilities by name or CVE number, filtering by key threat groups. Natural language search or complex queries quickly uncover relevant exposures. The curated database, streamlines processes, providing visibility and threat context.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <picture>
+                                <source media="(min-width:1024px)" srcset="images/feature-2.svg">
+                                <img src="images/feature-2-tab.svg" alt="Contextualize vulnerabilities">
+                            </picture>
+                        </div>
+                        <h4>Focus on the actions <br/>that matter</h4>
+                        <p>Vulnerability details, including scores, timelines, and metrics, provide deep context, empowering you to prioritize and respond effectively. Create focused initiatives to ensure  you focus on the exposures that really matter.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <picture>
+                                <source media="(min-width:1024px)" srcset="images/feature-2.svg">
+                                <img src="images/feature-3-tab.svg" alt="Accelerate response">
+                            </picture>
+                        </div>
+                        <h4>Communicate progress</h4>
+                        <p>SLA-based reports track the effectiveness of mitigation efforts, identify bottlenecks, assist with resource allocation, and facilitate data-driven decisions. This ensures visibility and transparency into how security initiatives align with overall business objectives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- feature sec end -->
+        <!-- practitioner sec -->
+        <section class="risks-section">
+            <div class="container">
+              <h2 class="heading">Identify exposures, track performance and take action</h2>
+              <div class="risks-section-wrapper">
+                <div class="risks-faq-wapper">
+                    <div class="faq-item">
+                        <div class="faq-title">Surface key exposures <div class="border-wrap"><div class="progress"></div></div></div>
+                        <div class="faq-text" style="display: block;">
+                            <picture class="faq-img-mbl">
+                                <source media="(min-width:1025px)" srcset="images/1-feature-desk.jpg">
+                                <source media="(min-width:767px)" srcset="images/1-feature-tab.jpg">
+                                <img src="images/1-feature-mbl.jpg" alt="Surface key exposures" loading="lazy">
+                            </picture>
+                            <p>Easily surface vulnerabilities by name or CVE number, filter by key categories, and use natural language or complex queries. Vulnerability Intelligence's curated database streamlines visibility and threat context.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-title pre_built">Contextualize vulnerabilities <div class="border-wrap"><div class="progress"></div></div></div>
+                        <div class="faq-text">
+                            <picture class="faq-img-mbl">
+                                <source media="(min-width:1025px)" srcset="images/2-feature-desk.jpg">
+                                <source media="(min-width:767px)" srcset="images/2-feature-tab.jpg">
+                                <img src="images/2-feature-mbl.jpg" alt="Contextualize vulnerabilities" loading="lazy">
+                            </picture>
+                            <p>Contextualize threats and risks to prioritize critical vulnerabilities. Gain insights into emerging threats and frequently exploited vulnerabilities. Detailed vulnerability pages include scores, timelines, and metrics for effective prioritization and response.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-title pre_built">Accelerate response <div class="border-wrap"><div class="progress"></div></div></div>
+                        <div class="faq-text">
+                            <picture class="faq-img-mbl">
+                                <source media="(min-width:1025px)" srcset="images/3-feature-desk.jpg">
+                                <source media="(min-width:767px)" srcset="images/3-feature-tab.jpg">
+                                <img src="images/3-feature-mbl.jpg" alt="Accelerate response" loading="lazy">
+                            </picture>
+                            <p>Confidently prioritize vulnerabilities by risk. Review how assets are impacted by CVEs and drive proactive security. Critical vulnerability info enables quick, informed decisions, accelerating response.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-title pre_built">Focus on the actions that matter <div class="border-wrap"><div class="progress"></div></div></div>
+                        <div class="faq-text">
+                            <picture class="faq-img-mbl">
+                                <source media="(min-width:1025px)" srcset="images/4-feature-desk.jpg">
+                                <source media="(min-width:767px)" srcset="images/4-feature-tab.jpg">
+                                <img src="images/4-feature-mbl.jpg" alt="Focus on the actions that matter" loading="lazy">
+                            </picture>
+                            <p>Create focused campaigns, such as "Fix all external remote code execution vulnerabilities," ensuring that you address the exposures that really matter.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-title pre_built">Drive team objectives <div class="border-wrap"><div class="progress"></div></div></div>
+                        <div class="faq-text">
+                            <picture class="faq-img-mbl">
+                                <source media="(min-width:1025px)" srcset="images/5-feature-desk.jpg">
+                                <source media="(min-width:767px)" srcset="images/5-feature-tab.jpg">
+                                <img src="images/5-feature-mbl.jpg" alt="Drive team objectives" loading="lazy">
+                            </picture>
+                            <p>Implement metrics you can achieve and track against. Visibility into team performance against campaigns empowers leaders to effectively operationalize practices, track progress and motivate the team.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-title pre_built">Communicate progress <div class="border-wrap"><div class="progress"></div></div></div>
+                        <div class="faq-text">
+                            <picture class="faq-img-mbl">
+                                <source media="(min-width:1025px)" srcset="images/6-feature-desk.jpg">
+                                <source media="(min-width:767px)" srcset="images/6-feature-tab.jpg">
+                                <img src="images/6-feature-mbl.jpg" alt="Communicate progress" loading="lazy">
+                            </picture>
+                            <p>SLA-based reporting ensures effective mitigation tracking, identifies bottlenecks, aids resource allocation, and supports data-driven decisions for aligned security initiatives and business objectives.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="risks-img-wrapper">
+                    <picture class="faq-img open">
+                        <source media="(min-width:1025px)" srcset="images/1-feature-desk.jpg">
+                        <source media="(min-width:767px)" srcset="images/1-feature-tab.jpg">
+                        <img src="images/1-feature-mbl.jpg" alt="Surface key exposures" loading="lazy">
+                    </picture>
+                    <picture class="faq-img">
+                        <source media="(min-width:1025px)" srcset="images/2-feature-desk.jpg">
+                        <source media="(min-width:767px)" srcset="images/2-feature-tab.jpg">
+                        <img src="images/2-feature-mbl.jpg" alt="Contextualize vulnerabilities" loading="lazy">
+                    </picture>
+                    <picture class="faq-img">
+                        <source media="(min-width:1025px)" srcset="images/3-feature-desk.jpg">
+                        <source media="(min-width:767px)" srcset="images/3-feature-tab.jpg">
+                        <img src="images/3-feature-mbl.jpg" alt="Accelerate response" loading="lazy">
+                    </picture>
+                    <picture class="faq-img">
+                        <source media="(min-width:1025px)" srcset="images/4-feature-desk.jpg">
+                        <source media="(min-width:767px)" srcset="images/4-feature-tab.jpg">
+                        <img src="images/4-feature-mbl.jpg" alt="Focus on the actions that matter" loading="lazy">
+                    </picture>
+                    <picture class="faq-img">
+                        <source media="(min-width:1025px)" srcset="images/5-feature-desk.jpg">
+                        <source media="(min-width:767px)" srcset="images/5-feature-tab.jpg">
+                        <img src="images/5-feature-mbl.jpg" alt="Drive team objectives" loading="lazy">
+                    </picture>
+                    <picture class="faq-img">
+                        <source media="(min-width:1025px)" srcset="images/6-feature-desk.jpg">
+                        <source media="(min-width:767px)" srcset="images/6-feature-tab.jpg">
+                        <img src="images/6-feature-mbl.jpg" alt="Communicate progress" loading="lazy">
+                    </picture>
+                  </div>
+              </div>
+            </div>
+        </section>
+        <!-- practitioner sec end -->
+        <!-- 3 usefull links sec start-->
+        <section class="usefull-links-section">
+            <div class="container">
+                <h2 class="heading">Vulnerability Exposure</h2>
+                <p class="sub-heading">Expose and close your cyber weaknesses with the world’s #1 vulnerability management solution.</p>
+                <div class="usefull-links-inner">
+                    <div class="usefull-links-item">
+                        <div class="usefull-links-icon">
+                            <picture>
+                                <source media="(min-width:1600px)" srcset="images/usefull-link-1920-1.svg">
+                                <source media="(min-width:768px)" srcset="images/usefull-link-1.svg">
+                                <img src="images/usefull-link-375-1.svg" alt="Vulnerability Intelligence">
+                            </picture>
+                        </div>
+                        <h4>Vulnerability Intelligence Data Sheet</h4>
+                        <a href="https://www.tenable.com/data-sheets/vulnerability-intelligence" class="down-btn" target="_blank">Download the data sheet <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none"><path d="M5.96533 12.2872L9.14589 9.10661L5.96533 5.91911L6.9445 4.93994L11.1112 9.10661L6.9445 13.2733L5.96533 12.2872Z" fill="#041E42"/></svg></a>
+                    </div>
+                    <div class="usefull-links-item">
+                        <div class="usefull-links-icon">
+                            <picture>
+                                <source media="(min-width:1600px)" srcset="images/usefull-link-1920-2.svg">
+                                <source media="(min-width:768px)" srcset="images/usefull-link-2.svg">
+                                <img src="images/usefull-link-375-2.svg" alt="Exposure Response">
+                            </picture>
+                        </div>
+                        <h4>Exposure Response Data Sheet</h4>
+                        <a href="https://www.tenable.com/data-sheets/tenable-identity-exposure" class="down-btn" target="_blank">Download the data sheet <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none"><path d="M5.96533 12.2872L9.14589 9.10661L5.96533 5.91911L6.9445 4.93994L11.1112 9.10661L6.9445 13.2733L5.96533 12.2872Z" fill="#041E42"/></svg></a>
+                    </div>
+                    <div class="usefull-links-item">
+                        <div class="usefull-links-icon">
+                            <picture>
+                                <source media="(min-width:1600px)" srcset="images/usefull-link-1920-3.svg">
+                                <source media="(min-width:768px)" srcset="images/usefull-link-3.svg">
+                                <img src="images/usefull-link-375-3.svg" alt="The Critical Few">
+                            </picture>
+                        </div>
+                        <h4>The Critical Few: How to focus on the exposures that matter</h4>
+                        <a href="##" class="down-btn" target="_blank">Download the research <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none"><path d="M5.96533 12.2872L9.14589 9.10661L5.96533 5.91911L6.9445 4.93994L11.1112 9.10661L6.9445 13.2733L5.96533 12.2872Z" fill="#041E42"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 3 usefull links sec end-->
+        <!-- footer start -->
+        <section class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="copyright">
+                        © <script>document.write(new Date().getFullYear())</script> Tenable® Inc. All rights reserved.
+                        <!--<span class="hidden-separator">|</span>-->
+                    </div>
+                    <div class="footer-links">
+                        <a href="https://www.tenable.com/privacy-policy" target="_blank">Privacy Policy</a> |
+                        <a href="https://www.tenable.com/privacy-policy#california-rights" target="_blank">Do Not Sell/Share My Personal Information</a><span> |</span>
+                        <a href="https://www.tenable.com/legal" target="_blank">Legal</a> |
+                        <a href="https://www.tenable.com/section-508-voluntary-product-accessibility" target="_blank">508 Compliance</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <!-- End Main -->
+    <!-- Javascript -->
+    <!-- Scripts  -->
+    <script src="https://www.tenable.com/lp/campaigns/20/Global/jquery-3.4.1.min.js"></script>
+    <script src="https://info.tenable.com/js/forms2/js/forms2.js"></script>
+    <script src="https://munchkin.marketo.net/munchkin.js"></script>
+    <script src="https://www.tenable.com/lp/cookie.js?v=20200929110000"></script>
+    <script src="https://www.tenable.com/evaluations/api/v1/tenable-evals.js"></script>
+    <script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
+    <script src="./js/script.js?v=1.0.0"></script>
+    <!-- Form Scripts -->
+    <script src="https://www.tenable.com/sites/all/themes/tenablefourteen/js/buy.js"></script>
+    <script type="text/javascript">
+        console.log('   ____     _                   _     _\r\n \/      \\  | |_ ___ _ __   __ _| |__ | | ___\r\n\/   \/\\   \\ | __\/ _ \\ \'_ \\ \/ _` | \'_ \\| |\/ _ \\\r\n\\   \\\/   \/ | ||  __\/ | | | (_| | |_) | |  __\/\r\n \\ ____ \/   \\__\\___|_| |_|\\__,_|_.__\/|_|\\___|\r\n\r\nIf you\'re looking at this, we want to hire you.\r\nhttps:\/\/tenable.com\/careers');
+    </script>
+    <!-- GCLID Script started  -->
+    <script>
+        function getParam(p) {
+            var match = RegExp('[?&]' + p + '=([^&]*)').exec(window.location.search);
+            return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+        }
+
+        function getExpiryRecord(value) {
+            var expiryPeriod = 90 * 24 * 60 * 60 * 1000; // 90 day expiry in milliseconds
+
+            var expiryDate = new Date().getTime() + expiryPeriod;
+            return {
+            value: value,
+            expiryDate: expiryDate
+            };
+        }
+
+        function addGclid() {
+            var gclidParam = getParam('gclid');
+            var gclidRecord = null;
+            var currGclidFormField;
+
+            var gclsrcParam = getParam('gclsrc');
+            var isGclsrcValid = !gclsrcParam || gclsrcParam.indexOf('aw') !== -1;
+
+            if (gclidParam && isGclsrcValid) {
+            gclidRecord = getExpiryRecord(gclidParam);
+            localStorage.setItem('gclid', JSON.stringify(gclidRecord));
+            }
+
+            var gclid = gclidRecord || JSON.parse(localStorage.getItem('gclid'));
+            var isGclidValid = gclid && new Date().getTime() < gclid.expiryDate;
+
+            if (isGclidValid) {
+            jQuery('[name="GCLID__c"]').attr('value', gclid.value)
+            }
+
+        }
+        window.addEventListener('load', addGclid);
+    </script>
+    <!-- GCLID Script ended -->
+</body>
+</html>
