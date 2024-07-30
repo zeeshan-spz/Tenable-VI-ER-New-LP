@@ -194,6 +194,12 @@ img {
 .hero-section .hero-section-cta a:active path{
     fill: #fff;
 }
+@media screen and (min-width: 1921px) {
+    .hero-section {
+        background-image: url(../images/hero_4k.svg);
+        padding: 24px 0 208px;
+    }
+}
 @media screen and (max-width: 1140px) {
     .hero-section .container{
         padding: 0 40px;
@@ -230,6 +236,7 @@ img {
     }
     .hero-section {
         background-image: url('../images/hero_375.svg');
+        background-position: center bottom;
         padding: 24px 0 148px;
     }
     .hero-section .container{
@@ -1110,6 +1117,14 @@ img {
 .risks-section .faq-title.open{
     color: var(--Accents-Sunrise, #FFA400);
 }
+@media screen and (min-width: 1921px) {
+    .risks-section {
+        background-image: url(../images/feature_4k.svg);
+    }
+    .risks-section::after{
+        opacity: 0;
+    }
+}
 @media screen and (max-width: 1140px) {
     .risks-section {
         padding: 308px 0 100px;
@@ -1162,6 +1177,9 @@ img {
         background-image: url(../images/feature_375.svg);
         padding: 118px 0 59px;
         margin-top: 47px;
+    }
+    .risks-section::after{
+        opacity: 0;
     }
     .risks-section .container {
         padding: 0 20px;
@@ -1368,7 +1386,7 @@ img {
     }
     .usefull-links-section .down-btn svg {
         margin-left: 8px;
-        margin-top: -1px;
+        margin-top: 1px;
     }
 }
 /* usefullinks section ends*/
