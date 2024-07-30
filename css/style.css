@@ -789,13 +789,13 @@ img {
 }
 .about-section .sm-logo {
     max-width: 100%;
-    margin-bottom: 17px;
 }
 .about-section .about-section-desc {
     font-size: 22px;
     font-weight: 400;
     line-height: 30px;
     color: var(--Accents-Midnight, #041E42);
+    margin-top: 17px;
 }
 @media screen and (max-width: 1140px) {
     .about-section .container{
@@ -835,7 +835,6 @@ img {
         max-width: initial;
         width: 290px;
         height: 23px;
-        margin: 0 auto 19px;
         display: block;
     }
     .about-section .about-section-desc {
@@ -843,6 +842,7 @@ img {
         font-weight: 400;
         line-height: 24px;
         text-align: center;
+        margin: 19px auto 0;
     }
 }
 /* about section ends*/
